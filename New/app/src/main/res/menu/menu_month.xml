@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <item
+        android:id="@+id/一月"
+        android:title="一月"  />
+
+    <item
+        android:id="@+id/二月"
+        android:title="二月"  />
+
+    <item
+        android:id="@+id/三月"
+        android:title="三月"  />
+
+    <item
+        android:id="@+id/四月"
+        android:title="四月"  />
+
+    <item
+        android:id="@+id/五月"
+        android:title="五月"  />
+
+    <item
+        android:id="@+id/六月"
+        android:title="六月"  />
+
+    <item
+        android:id="@+id/七月"
+        android:title="七月"  />
+
+    <item
+        android:id="@+id/八月"
+        android:title="八月"  />
+
+    <item
+        android:id="@+id/九月"
+        android:title="九月"  />
+
+    <item
+        android:id="@+id/十月"
+        android:title="十月"  />
+
+    <item
+        android:id="@+id/十一月"
+        android:title="十一月"  />
+
+    <item
+        android:id="@+id/十二月"
+        android:title="十二月"  />
+
+</menu>
