@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.michael.maplocapplication.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/radar_header" >
+    </LinearLayout>
+
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:clickable="true"
+        android:layout_below="@+id/header"
+        android:layout_alignStart="@+id/header">
+    </com.baidu.mapapi.map.MapView>
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:background="@drawable/centre_radar_original1"
+        android:layout_alignTop="@+id/bmapView"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:id="@+id/imageview_sweep"
+        android:layout_marginLeft ="70dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/radar_sweep1"
+        android:scaleType="center"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/btn_locate"
+        android:layout_toEndOf="@+id/btn_locate" />
+
+    <!--<Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刷新发送短信"
+            android:layout_below="@+id/bmapView"
+            android:layout_centerHorizontal="true" />-->
+
+    <Button
+        android:id="@+id/btn_locate"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_locate_def"
+
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header"/>
+    <ToggleButton
+        android:id="@+id/btn_refresh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_refresh_def"
+        android:layout_alignParentRight="true"
+        android:textOff=""
+        android:textOn=""
+        android:layout_alignTop="@+id/bmapView"
+        android:checked="false" />
+
+    <RelativeLayout
+        android:id="@+id/vgp_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_footer"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/bmapView">
+
+        <Button
+            android:id="@+id/btn_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_friends_def"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/btn_enemies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_enemies_def"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />-->
+</RelativeLayout>
